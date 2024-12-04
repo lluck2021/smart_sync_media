@@ -65,17 +65,67 @@ const UsersInfo = () => {
 
       {/* Display the menu image */}
       <Box display="flex" justifyContent="center" m="20px 0">
-        <img src={image}
+        <img
+          src={image}
           alt="Menu"
           width="600"
-          height="auto" />
-
+          height="auto"
+        />
       </Box>
+
+      {/* History Section */}
+      <Box
+        p={4}
+        m="20px 0"
+        sx={{
+          border: `3px solid ${colors.secondary[300]}`,
+          borderRadius: '8px',
+          backgroundColor: colors.background.default,
+          boxShadow: 3,
+        }}
+      >
+        <Typography variant="h4" gutterBottom>
+          History
+        </Typography>
+        <Typography variant="h6" paragraph>
+          My Great Great Great Grandmother Bridget Dolan and her children (11) left Ireland around 1848 and arrived in Philadelphia, PA, on April 1849. 
+          Many family members then moved to Clinton County in Iowa in the early 1850s.
+        </Typography>
+        <Typography variant="h6" paragraph>
+          It is only fitting we honor her name and the name of an Irish Saint well known and celebrated in Ireland (St. Brigid). 
+          Between my Irish dad and then visiting Ireland, I grew up never knowing a stranger. 
+          My parents raised us under the tradition of welcoming people to our kitchen and table.
+        </Typography>
+      </Box>
+
+      {/* Everyone is Welcomed Section */}
+        <Box
+          p={4}
+          m="20px 0"
+          sx={{
+            border: `3px solid ${colors.secondary[300]}`,
+            borderRadius: '8px',
+            backgroundColor: colors.background.default,
+            boxShadow: 3,
+            textAlign: 'justify',
+          }}
+        >
+          <Typography variant="h4" gutterBottom>
+          A community that gathers together grows together          </Typography>
+          <Typography variant="h6" paragraph>
+            My husband and I enjoy welcoming people to our community and now in retirement wish to help it grow. 
+            Irish Pubs are a natural attraction for hospitality, great conversations, and a community hub or hangout.
+          </Typography>
+          <Typography variant="h6" paragraph>
+            We welcome you to join us here at Bridgetâ€™s not to watch TV, not to catch up on tech browsing but to meet 
+            your neighbors and visitors to our community. You may come as a stranger and be welcomed when you return as a friend.
+          </Typography>
+        </Box>
 
       {firstUser ? (
         <Box>
           <Box display="flex" m="40px 0 0 0" height="auto">
-            <Typography variant="h3">Madonna</Typography>
+            <Typography variant="h3">{firstUser.name}</Typography>
           </Box>
           <Box
             p={4}
@@ -89,10 +139,10 @@ const UsersInfo = () => {
             <Typography variant="h3" gutterBottom>
               User Information
             </Typography>
-            <Typography variant="h5" p={1}>Username: MaBowie</Typography>
-            <Typography variant="h5" p={1}>Email: grmabowie@gmail.com</Typography>
-            <Typography variant="h5" p={1}>Phone: (641) 660-3029</Typography>
-            <Typography variant="h5" p={1}>Website: https://www.mahaskachamber.org/directory/bridgets_public_house/</Typography>
+            <Typography variant="h5" p={1}>Username: {firstUser.username}</Typography>
+            <Typography variant="h5" p={1}>Email: {firstUser.email}</Typography>
+            <Typography variant="h5" p={1}>Phone: {firstUser.phone}</Typography>
+            <Typography variant="h5" p={1}>Website: {firstUser.website}</Typography>
           </Box>
         </Box>
       ) : (
