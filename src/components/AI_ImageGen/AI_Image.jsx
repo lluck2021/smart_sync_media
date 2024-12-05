@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { tokens } from "../../theme";
 import { Box, Typography, CircularProgress, useTheme, TextField, Button } from '@mui/material';
 import default_image from "./assets/Background_image.jpg";
-import background_image from "./assets/transparent.png";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
