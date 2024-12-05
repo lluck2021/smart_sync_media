@@ -318,7 +318,13 @@ const AI_Image = () => {
           textAlign: "center", // Center the text
         }}>
         <div>
-          <h3 id="previewPost" style={{ color: 'black' }}></h3>
+          <h3 
+            id="previewPost" 
+            style={{ color: 'black' }} 
+            aria-live="polite"
+          >
+            Content will appear here when you preview your post.
+          </h3>
           <img
             id="previewImage"
             alt="preview"
