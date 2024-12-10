@@ -1,5 +1,5 @@
 import { createContext, useState, useMemo } from "react";
-import { createTheme, Typography } from "@mui/material";
+import { createTheme} from "@mui/material";
 
 
 export const tokens = (mode) => ({
@@ -10,15 +10,15 @@ export const tokens = (mode) => ({
                 100: "#169B62",
             },
             background: {
-                default: '#185412', //green background
+                default: '#0a9138', //green background
             },
             primary: {
-                100: "#1d6317",
-                200: "#bd5709",//orange side bar
+                100: "#169B62",
+                200: "#139c13",//green side bar
                 
             },
             secondary: {
-                100: "#ded8d3", //white top bar 
+                100: "#FF883E", //orange 
                 200: "#fc7521",
             },
         }
