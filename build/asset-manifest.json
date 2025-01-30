@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/smart_sync_media/static/css/main.654e8eb9.css",
+    "main.js": "/smart_sync_media/static/js/main.f81cc748.js",
+    "static/media/Background_image.jpg": "/smart_sync_media/static/media/Background_image.aec0e6909d0ce4eb02d7.jpg",
+    "static/media/menu.png": "/smart_sync_media/static/media/menu.94f3c551e42d88b86c10.png",
+    "index.html": "/smart_sync_media/index.html",
+    "main.654e8eb9.css.map": "/smart_sync_media/static/css/main.654e8eb9.css.map",
+    "main.f81cc748.js.map": "/smart_sync_media/static/js/main.f81cc748.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.654e8eb9.css",
+    "static/js/main.f81cc748.js"
+  ]
+}
